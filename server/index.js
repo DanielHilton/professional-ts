@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 const Bundler = require('parcel-bundler');
 const e = require('express');
 const jsonServer = require('json-server');
@@ -24,5 +24,5 @@ app.use(bundler.middleware());
 
 // Listen on port PORT
 app.listen(PORT, () => {
-    console.log(`Serving on http://localhost:${PORT}`)
+  console.log(`Serving on http://localhost:${PORT}`);
 });

@@ -9,7 +9,7 @@
   },
   "extends": [
     "eslint:recommended",
-    "prettier",
+    "plugin:prettier/recommended",
     "plugin:promise/recommended",
     "plugin:sonarjs/recommended"
   ],
@@ -24,9 +24,9 @@
   "plugins": [
     "react",
     "@typescript-eslint",
+    "prettier",
     "promise",
-    "sonarjs",
-    "prettier"
+    "sonarjs"
   ],
   "rules": {
     "prefer-const": "error"
@@ -44,12 +44,15 @@
       },
       "rules": {
         "react/prop-types": "off",
-        "react/no-children-prop": "off"
+        "react/no-children-prop": "off",
+        "@typescript-eslint/no-unsafe-assignment": "error",
+        "@typescript-eslint/no-unsafe-return": "error",
+        "@typescript-eslint/no-explicit-any": "off"
       },
       "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
-        "prettier/react"
+        "plugin:prettier/recommended"
       ]
     },
     /**
@@ -72,7 +75,7 @@
     {
       "files": ["{src,tests}/**/*.{ts,tsx}"],
       "extends": [
-        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking"
       ],
