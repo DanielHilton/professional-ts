@@ -12,6 +12,7 @@
     "jsx": "react",
     "moduleResolution": "Node",
     "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noImplicitReturns": true,
     "stripInternal": true,
     "types": []
